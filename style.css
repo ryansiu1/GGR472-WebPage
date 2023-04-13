@@ -1,0 +1,267 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* styling for the sidebar */
+.sidebar {
+    height: 100%;
+    width: 140px;
+    position: fixed;
+    z-index: 1;
+    top: 54px;
+    left: 0;
+    background-color: #6e726c;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* styling for the sidebar element */
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+}
+
+/* styling for hovering over a sidebar element */
+.sidebar a:hover {
+    color: #ffffff;
+}
+
+.main {
+    margin-left: 140px;
+    /* Same as the width of the sidenav */
+    font-size: 28px;
+    /* Increased text to enable scrolling */
+    padding: 10px 10px;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+/* styling for the navbar */
+#navbar {
+    background-color: #4b5e47;
+    /* Black background color */
+    position: fixed;
+    /* Make it stick/fixed */
+    top: 0;
+    /* Stay on top */
+    width: 100%;
+    /* Full width */
+    transition: top 0.3s;
+    /* Transition effect when sliding down (and up) */
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+/* styling for hovering over a navbar element */
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* styling for the 2016 map body */
+.map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 54px;
+}
+
+/* styling for the 2021 map body */
+.map2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 54px;
+}
+
+/* styling for the 3D 2016 map body */
+.map3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 54px;
+}
+
+/* styling for the 3D 2021 map body */
+.map4 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 54px;
+}
+
+/* styling for popup box */
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+/* styling for layer filter checklist */
+.map-overlay-data {
+    position: relative;
+    font: 14px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background: #4b5e47;
+    color: rgb(231, 226, 226);
+    width: 260px;
+    top: 0;
+    left: 150px;
+    margin-top: 650px;
+    padding: 10px;
+    overflow: visible;
+}
+
+/* styling for text */
+.paragraph {
+    margin-top: 80px;
+    color: rgb(231, 226, 226);
+    margin-right: 15%;
+
+}
+
+/* styling for text */
+.text {
+    color: rgb(231, 226, 226);
+    margin-right: 15%;
+
+}
+
+/* created a textbox that will display the median income */
+.textbox {
+    position: absolute;
+    font: 14px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background: #4b5e47;
+    color: rgb(231, 226, 226);
+    width: 260px;
+    top: 100px;
+    left: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    overflow: visible;
+    opacity: 1;
+}
+
+/* styling for the legend */
+.legend {
+    background-color: #ffffff;
+    border-radius: 3px;
+    bottom: 30px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+}
+
+.legend h4 {
+    margin: 0 0 10px;
+}
+
+.legend div span {
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    margin-right: 5px;
+    width: 10px;
+}
+
+/* creating a zoom animation for the image (timing) */
+.zoom {
+
+    transition: transform .2s;
+    /* Animation */
+}
+
+/* the extent of the scaling up */
+.zoom:hover {
+    transform: scale(1.25);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* centering an image */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-image {
+    /* The image used */
+    background-image: url("https://thecanadaguide.com/wp-content/uploads/top-photo-money.jpg");
+
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(10px);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black w/opacity/see-through */
+    color: white;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    
+}

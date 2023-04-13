@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/ryansiu1/datarepo/main/favicon.ico">
+    <!-- Mapbox Map Plugin -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css' rel='stylesheet' />
+    <!-- Mapbox Geocoder Plugin -->
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css"
+        type="text/css">
+    <!-- Bootstrap Styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body style="background-color:#748570;">
+    <!--Adding a navbar to the top of the page-->
+    <div id="navbar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="creators.html">Creators</a>
+        <a href="FAQ.html"><u><b>FAQ</b></u></a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!--Creating an accordion series of text for FAQ page-->
+    <button class="accordion">Where did we source our data?</button>
+    <div class="panel">
+        <li>Income data was derived from <a target=”_blank” href=http://dc1.chass.utoronto.ca/census/index.html
+                style="color:rgb(252, 207, 7)"> CHASS</a> Data Centre (UofT),
+            a streamlined version of the Canadian National Census Data.
+        </li>
+        <li>The CSD and CT boundaries were sourced from the <a target=”_blank”
+                href=https://www12.statcan.gc.ca/census-recensement/2021/geo/sip-pis/boundary-limites/index-eng.cfm
+                style="color:rgb(252, 207, 7)"> Census Geography Website.</a> </li>
+        <li>The<a target=”_blank” href=https://open.toronto.ca/dataset/ttc-subway-shapefiles/
+                style="color:rgb(252, 207, 7)"> Open Data Toronto Portal.</a> has data regarding the subway shapefiles.
+        </li>
+    </div>
+
+    <button class="accordion">How did we create this web geovisualization?</button>
+    <div class="panel">
+        <div class="dropdown">
+            <button class="dropbtn">The Secret Recipe!</button> <!--Adding a dropdown button with links to a series of websites-->
+            <div class="dropdown-content">
+                <a target=”_blank” href="https://www.w3schools.com/whatis/">Web Programming</a>
+                <a target=”_blank” href="https://www.mapbox.com/mapbox-studio">Mapbox Studio</a>
+                <a target=”_blank” href="https://github.com/ryansiu1/GGR472-WebPage">GitHub</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <li>Creating these series of maps was made possible using a variety of tools and open-source online platforms.</li>
+        <li>The trio of web application languages of HTML, CSS, and JavaScript to form the webpage.</li>
+        <li>Mapbox Studio and Mapbox GLJS to create the visualizations.</li>
+        <li>GitHub and GitHub Desktop to commit our data online and publish a webpage.</li>
+        <br>
+
+    </div>
+
+    <button class="accordion">What are some future improvements to this web tool?</button>
+    <div class="panel">
+        <li>Applying these visualizations to other regions of Canada. A cross-country tool to visualize income.</li>
+        <li>Including other socioeconomic variables as part of the tool. Being able to integrate population, education,
+            health data, etc.</li>
+        <li>Adding a slider to easily compare between datasets from the same time range.
+            <img src="https://media1.giphy.com/media/ieh6CxZVNAMEHGQSkr/giphy.gif" alt="Income" class="center">
+        </li>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
